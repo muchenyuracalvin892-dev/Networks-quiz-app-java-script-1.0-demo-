@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 98vh;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+.container{
+    width: 450px;
+    height:350px;
+    background-color: rgb(97, 162, 219);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0px 2px 15px 1px rgb(60, 79, 95);
+
+}
+#sub_container{
+    margin-top: 10px;
+    width:440px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(97, 162, 219);
+justify-content: center;
+row-gap: 6px;
+    padding: 3px;
+
+}
+.btn{
+    width: 440px;
+    height: 60px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(97, 162, 219);
+    box-shadow: 0px 2px 15px 1px rgb(60, 79, 95);
+    color: white;
+    transition: 0.001s ease-in-out;
+}
+.btn:hover{
+    transform: scale(103%);
+    color: white;
+     
+}
+.btn:active{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px; 
+}
+.submit{
+    width: 100px;
+    height: 35px;
+    margin-left: 180px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 15px 1px rgb(60, 79, 95);
+    background-color:  rgb(20, 124, 215);
+    border-radius: 10px;
+    border-style: none;
+    transition: 0.001s ease-in-out;
+    
+}
+.submit:hover{
+   transform: scale(110%);
+   color: white;
+}
+.submit:active{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px; 
+}
+#qd{
+    width: 95%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    border-style: none;
+    border-radius: 7px;
+    
+}
+#question_display{
+    margin-left: 10px;
+}
+</style>
+<body>
+    <h1 style="margin-bottom: 40px; font-size: 40px;">Networks Quiz app</h1>
+<div class="container">
+    <div id="qd">
+           <h2 id="question_display"></h2>
+    </div>
+    <div id="sub_container">
+       <button class="btn"></button>
+        <button class="btn"></button>
+      <button class="btn"></button>
+   </div>
+    <button class="submit">Load</button>
+</div>
+
+    <script src="quiz_app1.0.js"></script>
+</body>
+</html>
